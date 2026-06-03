@@ -1,0 +1,6 @@
+vendor/
+.env
+.claude/
+uploads/*
+!uploads/.gitkeep
+*.log
