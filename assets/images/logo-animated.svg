@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Curriculum Advisory Services animated logo">
+  <defs>
+    <linearGradient id="casBadgeGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E75B6"/>
+      <stop offset="100%" stop-color="#1F4E79"/>
+    </linearGradient>
+    <style>
+      .cas-badge {
+        transform-origin: 60px 60px;
+        animation: cas-pulse 4s ease-in-out infinite;
+      }
+      .cas-ring {
+        transform-origin: 60px 60px;
+        animation: cas-spin 9s linear infinite;
+      }
+      .cas-dot {
+        transform-origin: 85.7px 34.3px;
+        animation: cas-ping 2.4s ease-in-out infinite;
+      }
+      @keyframes cas-pulse {
+        0%, 100% { transform: scale(1); }
+        50%      { transform: scale(1.035); }
+      }
+      @keyframes cas-spin {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+      }
+      @keyframes cas-ping {
+        0%, 100% { transform: scale(1);    opacity: 1;    }
+        50%      { transform: scale(1.45); opacity: 0.55; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .cas-badge, .cas-ring, .cas-dot { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <circle class="cas-badge" cx="60" cy="60" r="58" fill="url(#casBadgeGradA)" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <circle class="cas-ring" cx="60" cy="60" r="34" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"
+          stroke-dasharray="178 36" transform="rotate(-15 60 60)"/>
+
+  <line x1="46" y1="74" x2="73" y2="47" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M80,40 L76.4,50.6 L69.4,43.6 Z" fill="#FFFFFF"/>
+  <circle class="cas-dot" cx="85.7" cy="34.3" r="5" fill="#F2A93B"/>
+</svg>
