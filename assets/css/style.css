@@ -21,6 +21,30 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+/* Brand logo */
+.brand-logo {
+    display: block;
+    height: 56px;
+    width: auto;
+    margin: 0 auto 20px;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.header-brand h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
 .card h2 {
     color: #1F4E79;
     margin-bottom: 20px;

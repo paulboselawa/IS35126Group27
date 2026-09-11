@@ -45,12 +45,16 @@ $jobs = $pdo->query("SELECT id, title, department FROM jobs WHERE status = 'open
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Applicant Dashboard</title>
+    <title>Applicant Dashboard - Curriculum Advisory Services</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="header">
-        <h1>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></h1>
+        <div class="header-brand">
+            <img src="assets/images/logo-icon.svg" alt="Curriculum Advisory Services">
+            <h1>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></h1>
+        </div>
         <div>
             <a href="apply.php">Apply for Job</a>
             <a href="logout.php">Logout</a>

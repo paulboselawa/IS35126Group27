@@ -43,11 +43,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register - Recruitment System</title>
+    <title>Register - Curriculum Advisory Services</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="card">
+        <img class="brand-logo" src="assets/images/logo.svg" alt="Curriculum Advisory Services">
         <h2>Applicant Registration</h2>
         <?php if ($error): ?>
             <div class="error"><?php echo htmlspecialchars($error); ?></div>

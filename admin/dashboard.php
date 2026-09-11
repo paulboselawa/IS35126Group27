@@ -22,14 +22,20 @@ $appCount = $pdo->query("SELECT COUNT(*) FROM applications")->fetchColumn();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Dashboard</title>
+    <title>Admin Dashboard - Curriculum Advisory Services</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo-icon.svg">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <div class="header">
-        <h1>Admin Dashboard</h1>
-        <span>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
-        <a href="../logout.php">Logout</a>
+        <div class="header-brand">
+            <img src="../assets/images/logo-icon.svg" alt="Curriculum Advisory Services">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <div>
+            <span>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
+            <a href="../logout.php">Logout</a>
+        </div>
     </div>
     <div class="dashboard-stats">
         <div class="stat-card">Users: <?php echo $userCount; ?></div>

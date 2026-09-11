@@ -84,11 +84,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Verify Code</title>
+    <title>Verify Code - Curriculum Advisory Services</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="card">
+        <img class="brand-logo" src="assets/images/logo.svg" alt="Curriculum Advisory Services">
         <h2>Check Your Email</h2>
         <p>We sent a 6-digit code to <strong><?php echo htmlspecialchars($_SESSION['2fa_email']); ?></strong></p>
         <?php if ($error): ?>

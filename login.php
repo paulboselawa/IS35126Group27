@@ -93,12 +93,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login - Recruitment System</title>
+    <title>Login - Curriculum Advisory Services</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="card">
-        <h2>Recruitment System Login</h2>
+        <img class="brand-logo" src="assets/images/logo.svg" alt="Curriculum Advisory Services">
+        <h2>Recruitment Portal Login</h2>
         <?php if ($error): ?>
             <div class="error"><?php echo htmlspecialchars($error); ?></div>
         <?php endif; ?>
