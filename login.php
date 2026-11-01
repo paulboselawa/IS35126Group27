@@ -11,6 +11,8 @@ if (isset($_SESSION['authenticated']) && $_SESSION['authenticated'] === true) {
         header('Location: admin/dashboard.php');
     } elseif ($_SESSION['role'] == 'hr') {
         header('Location: hr/dashboard.php');
+    } elseif ($_SESSION['role'] == 'teacher') {
+        header('Location: cas/manage.php');
     } else {
         header('Location: dashboard.php');
     }

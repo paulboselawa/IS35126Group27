@@ -43,6 +43,7 @@ $appCount = $pdo->query("SELECT COUNT(*) FROM applications")->fetchColumn();
             <li><a href="manage_jobs.php">Manage Jobs</a></li>
             <li><a href="view_applications.php">View All Applications</a></li>
             <li><a href="audit_logs.php">View Audit Logs</a></li>
+            <li><a href="../cas/manage.php">CAS Learning Resources (5 KLAs)</a></li>
         </ul>
     </div>
 </body>

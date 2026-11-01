@@ -102,3 +102,5 @@ INSERT INTO `users` (`username`, `email`, `password`, `role`) VALUES
 -- Seed: one sample job
 INSERT INTO `jobs` (`title`, `description`, `department`, `status`) VALUES
 ('Software Developer', 'Develop web applications using PHP and MySQL', 'IT', 'open');
+
+-- CAS Learning Resources Portal: run cas/schema.sql after this file

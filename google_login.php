@@ -91,6 +91,8 @@ if ($role === 'admin') {
     header('Location: admin/dashboard.php');
 } elseif ($role === 'hr') {
     header('Location: hr/dashboard.php');
+} elseif ($role === 'teacher') {
+    header('Location: cas/manage.php');
 } else {
     header('Location: dashboard.php');
 }

@@ -2,4 +2,4 @@
 nixPkgs = ["php83", "php83Packages.composer", "php83Extensions.pdo_mysql", "php83Extensions.mbstring", "php83Extensions.openssl"]
 
 [start]
-cmd = "php -S 0.0.0.0:$PORT"
+cmd = "php -d upload_max_filesize=50M -d post_max_size=55M -d memory_limit=256M -S 0.0.0.0:$PORT"

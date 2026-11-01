@@ -66,6 +66,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     header('Location: admin/dashboard.php');
                 } elseif ($_SESSION['role'] == 'hr') {
                     header('Location: hr/dashboard.php');
+                } elseif ($_SESSION['role'] == 'teacher') {
+                    header('Location: cas/manage.php');
                 } else {
                     header('Location: dashboard.php');
                 }
