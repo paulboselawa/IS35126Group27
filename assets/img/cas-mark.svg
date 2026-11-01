@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="CAS">
+  <defs>
+    <linearGradient id="casBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E75B6"/>
+      <stop offset="1" stop-color="#1F4E79"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="26" fill="url(#casBg)"/>
+  <!-- "C" ring, open to the right -->
+  <path d="M84.04 35.96 A34 34 0 1 0 84.04 84.04" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+  <!-- applicant -->
+  <circle cx="58" cy="49" r="9" fill="#FFFFFF"/>
+  <path d="M42 77 a16 14 0 0 1 32 0 z" fill="#FFFFFF"/>
+  <!-- approved tick in the C's opening -->
+  <path d="M80 62 L88 70 L103 51" fill="none" stroke="#8FD0FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
